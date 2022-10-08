@@ -1,44 +1,50 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 
 }
-body{
-    background:#e6e5eb;
+
+body {
+    background: #e6e5eb;
     color: rgb(8, 8, 8);
 }
-#header{
+
+#header {
     width: 100%;
     height: 100vh;
     /* background-image: url(/logo.png) ; */
-   /* background-color: #080808; */
+    /* background-color: #080808; */
     background-size: cover;
     background-position: center;
 }
-.container{
+
+.container {
     padding: 10px 10px;
 }
 
-nav{
+nav {
     display: flex;
     background: #000;
-    align-items:center ;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style: none;
-   margin:10px 20px ;
+    margin: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size:18px;
+    font-size: 18px;
 
 }
+
 /* .tab::after{
     content:'';
     width:0;
@@ -49,117 +55,149 @@ nav ul li a{
     bottom: -9px;
     transition:0.5s;
 } */
-nav ul li a::after{
-    content:'';
-   /* width:100%; */
-    height:3px;
+nav ul li a::after {
+    content: '';
+    /* width:100%; */
+    height: 3px;
     background: rgb(12, 100, 100);
     position: absolute;
-    left:0;
-    bottom:-8px;
+    left: 0;
+    bottom: -8px;
     transition: 0.5s;
-    
-}
-nav ul li a:hover::after{
-    width:100%;
+
 }
 
-.header_txt{
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header_txt {
     margin-top: 120px;
-    font-size:20px;
+    font-size: 20px;
 
 
 }
-.header_txt h1{
-    font-size:50px;
-    margin-top:20px;
+
+.header_txt h1 {
+    font-size: 50px;
+    margin-top: 20px;
 }
-.header_txt h1 span{
+
+.header_txt h1 span {
     color: rgb(12, 100, 100);
 }
+
 /* --------------about? */
-#about{
-    padding:80px;
-    color:#000000;
+#about {
+    padding: 80px;
+    color: #000000;
 }
 
 
-.row{ 
-    display:flex;
+.row {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
 }
-.about_c1{
+
+.about_c1 {
     flex-basis: 34%;
 }
-.about_c1 img{
-    width:100%;
+
+.about_c1 img {
+    width: 100%;
     border-radius: 34px;
-} 
+}
+
 .about_c2 {
- flex-basis: 60%;
+    flex-basis: 60%;
 }
-.stitle{
+
+.stitle {
     font-size: 36px;
-    font-weight:500;
-    color:rgb(2, 2, 2)
-    
+    font-weight: 500;
+    color: rgb(2, 2, 2);
 }
-.tabtitles{
-    display:flex;
-    margin:20px 0 40px;
+
+.tabtitles {
+    display: flex;
+    margin: 20px 0 40px;
 
 }
-.tab{
+
+.tab {
     margin-right: 50px;
     font-size: 24px;
     font-weight: 600;
-    cursor:pointer;
+    cursor: pointer;
     position: relative;
 
 }
-.tab::after{
-    content:'';
-    width:0;
-    height:4px;
-    background:rgb(12, 100, 100);
-    position:absolute;
-    left:0;
+
+.tab::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    background: rgb(12, 100, 100);
+    position: absolute;
+    left: 0;
     bottom: -9px;
-    transition:0.5s;
+    transition: 0.5s;
 }
-.tab.a-link::after{
-    width:50%;
+
+.tab.a-link::after {
+    width: 50%;
 }
-.tab-c ul li{
-    list-style:none;
+
+.tab-c ul li {
+    list-style: none;
     margin: 10px 0;
     font-size: 12px;
 }
-.tab-c ul li span{
-    color:rgb(12, 100, 100);
+
+.tab-c ul li span {
+    color: rgb(12, 100, 100);
     font-size: 15px;
     font-weight: 700;
 }
-.tab-c ul li ol li{
-    list-style-type:circle;
+
+.tab-c ul li ol li {
+    list-style-type: circle;
 }
-.tab-c ul li ol li{
+
+.tab-c ul li ol li {
     font-size: 11px;
     font-weight: 600;
 }
 
+.tab-c {
+    display: none;
+}
+
+.tab-c.a-tab {
+    display: block;
+}
+/* =================services? */
+#services{
+    background-color: hsl(0, 0%, 0%);
+    margin-top: 130px;
+    color:#e6e5eb;
+    padding: 30px 60px 34px;
 
 
+}
+.sstitle{
+     font-size: 60px;
+    font-weight: 500;
+    color: rgb(255, 253, 253);
+    margin: 34px;
+}
+.servic-list{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr)) ;
+    grid-gap:40px;
 
 
-
-
-
-
-
-
-
-
+}
 

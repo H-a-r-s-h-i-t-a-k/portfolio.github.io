@@ -17,16 +17,16 @@
                 <ul>
                     <li><a href="#header"> Home</a></li>
                     <li><a href="#about"> About</a></li>
-                    <li><a href="#"> Services</a></li>
-                    <li><a href="#"> Portfolio</a></li>
-                    <li><a href="#"> Contact </a></li>
+                    <li><a href="#services"> Services</a></li>
+                    <li><a href="#Portfolio"> Portfolio</a></li>
+                    <li><a href="#contact"> Contact </a></li>
                 </ul>
             </nav>
 
             <div class="header_txt">
                 <p> FSW Developer and Programer</p>
                 <h1>Hi,I'm <span> Harshita</span></h1>
-                <h1> kashyap from India ,Delhi</h1>
+                <h1> Kashyap from India </h1>
             </div>
 
 
@@ -45,13 +45,14 @@
                     </div>
                     <p>jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkjierouefnskndkivndkhgi iufidjfldjf djodjfdlj</p>
                     <div class="tabtitles">
-                        <div class="tab a-link"> Education</div>
-                        <div class="tab a-link"> Experiences</div>
-                        <div class="tab a-link"> Skills</div>
-                        <div class="tab a-link"> Projects</div>
+                        <div class="tab a-link " onclick="opentab('Education')"> Education</div>
+                        <div class="tab " onclick="opentab('Experiences') " > Experiences</div>
+                        <div class="tab " onclick="opentab('Skills') "> Skills</div>
+                        <div class="tab " onclick="opentab('Projects') "> Projects</div>
+
                     </div>
                     <!-- skill? -->
-                    <div class="tab-c">
+                    <div class="tab-c" id="Skills">
                         <ul>
                             <li><span> Web development</span><br>Designing and build web application /site using:
                                 <ol>
@@ -60,8 +61,8 @@
                                 </ol>
                             </li>
                             <li><span> App development</span><br>Build Optimised android/IOS application using: <br>
-                                
-                                <ol >
+
+                                <ol>
                                     <li> PYTHON </li>
                                     <li> C++ ADVANCED </li>
                                     <li> JAVA </li>
@@ -69,8 +70,8 @@
                             </li>
                         </ul>
                     </div>
-           <!-- ---------------Education---------- -->
-           <div class="tab-c">
+                    <!-- ---------------Education---------- -->
+                    <div class="tab-c a-tab" id="Education">
                         <ul>
                             <li><span> ---Education---</span><br>Designing and build web application /site using:
                                 <ol>
@@ -79,8 +80,8 @@
                                 </ol>
                             </li>
                             <li><span> App development</span><br>Build Optimised android/IOS application using: <br>
-                                
-                                <ol >
+
+                                <ol>
                                     <li> PYTHON </li>
                                     <li> C++ ADVANCED </li>
                                     <li> JAVA </li>
@@ -88,8 +89,8 @@
                             </li>
                         </ul>
                     </div>
-           <!-- ---------------Experience---------- -->
-           <div class="tab-c">
+                    <!-- ---------------Experience---------- -->
+                    <div class="tab-c" id="Experiences">
                         <ul>
                             <li><span>--------Experience </span><br>Designing and build web application /site using:
                                 <ol>
@@ -98,8 +99,8 @@
                                 </ol>
                             </li>
                             <li><span> App development</span><br>Build Optimised android/IOS application using: <br>
-                                
-                                <ol >
+
+                                <ol>
                                     <li> PYTHON </li>
                                     <li> C++ ADVANCED </li>
                                     <li> JAVA </li>
@@ -107,8 +108,8 @@
                             </li>
                         </ul>
                     </div>
-           <!-- ---------------project---------- -->
-           <div class="tab-c">
+                    <!-- ---------------project---------- -->
+                    <div class="tab-c" id="Projects">
                         <ul>
                             <li><span> ------project-----</span><br>Designing and build web application /site using:
                                 <ol>
@@ -117,8 +118,8 @@
                                 </ol>
                             </li>
                             <li><span> App development</span><br>Build Optimised android/IOS application using: <br>
-                                
-                                <ol >
+
+                                <ol>
                                     <li> PYTHON </li>
                                     <li> C++ ADVANCED </li>
                                     <li> JAVA </li>
@@ -129,12 +130,56 @@
                     <!-- <hskjjk -->
                 </div>
             </div>
-
         </div>
-
-
-
     </div>
+    <!-- =================service -->
+<div id="services">
+<div class="container">
+ <h1 class="sstitle"> My Services</h1><br><br>
+ <div class="servic-list">
+    <div>
+        <h2> Web Design</h2><br><br>
+        <p>
+            A web designer works on the appearance, layout, and, in some cases, content of a website. Appearance, for instance, relates to the colors, font, and images used. Layout refers to how information is structured and categorized. A good web design is easy to use, aesthetically pleasing, and suits the user group and brand of the website.
+        </p>
+    </div>
+ <div>
+        <h2> App Design</h2><br><br>
+        <p>
+            Control every pixel to create customized & adaptive designs that look great on any screen. Take control of your codebase with plugins, testing, dev tools & build high quality apps. Mobile Ads SDK. Native Performance. Hot Reload
+        </p>
+    </div>
+     <div>
+        <h2> Game Design</h2><br><br>
+        <p>
+            Bring your vision to life with the latest technological innovations and convenient tools. Find new opportunities to take your game to the next level.
+        </p>
+    </div>
+
+ </div>
+
+</div>
+</div>
+<!-- ============end -->
+<script>
+    var tabl=document.getElementsByClassName('tab');
+    var tabc=document.getElementsByClassName('tab-c');
+
+        function opentab(tabname){
+            for(tabl1 of tabl){
+                tabl1.classList.remove('a-link');
+            }
+            for(tabc1 of tabc){
+                tabc1.classList.remove('a-tab');
+            }
+            event.currentTarget.classList.add('a-link');
+            document.getElementById(tabname).classList.add("a-tab");
+        }
+// =====================end about========================
+
+</script>
+
+
 
 </body>
 
